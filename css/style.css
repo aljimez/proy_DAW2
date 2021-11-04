@@ -1,0 +1,34 @@
+.back {
+    background-color: orange;
+}
+
+.imglo {
+    width: 15em;
+}
+
+.login {
+    border: black 2px solid;
+    width: 10em;
+}
+
+.register {
+    border: black 2px solid;
+    width: 10em;
+}
+
+.menu {
+    background-color: black;
+    align-content: center;
+}
+
+.cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bot {
+    margin: 50px;
+}
