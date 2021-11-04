@@ -1,27 +1,29 @@
 <?php
 require ("con_db.php");
-
+session_start();
 if (!$conn){
 
 die ("No hay conexión: ".mysqli_connect_error());
 
 }
 
-$nombre = $_POST ["txtusuario"];
-$pass = $_POST ["txtpassword"];
+$user = $_POST ["textuser"];
+$pass = $_POST ["textpassword"];
 $pass_encrypt = hash('sha512',$pass);
 
+$query1 = mysqli_query($conn,"SELECT * FROM login WHERE user = '".$user."'");
+foreach ($query1 as $num_row => $value) {
 
-$query = mysqli_query($conn,"SELECT * FROM login WHERE usuario = '".$nombre."' and password = '".$pass_encrypt."'");
-
-if($query){
-
-    
+    $passout = ($value['password']);
 }
+if($pass_encrypt == $passout){
+$_SESSION['textuser'] = $user;
 
-//$query = mysqli_query ($conn,"insert into login values ($pass_encrypt,$nombre)")
-//$nr = mysqli_num_rows($query);
+header('Location: mpag.php');
+}else header('Location: loginv.php');
 /*
+$query = mysqli_query ($conn,"insert into login values ($pass_encrypt,$nombre)")
+$nr = mysqli_num_rows($query);
 if ($nr == 1){
     //header ("Location: pagina.html")
 echo "Bienvenido:".$nombre

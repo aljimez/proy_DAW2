@@ -43,7 +43,7 @@ session_start();
                         <td colspan="2"><label> Login</label></td>
                     </tr>
                     <tr>
-                        <td><label> Nom/email</label></td>
+                        <td><label> Usuari</label></td>
                     </tr>
                     <tr>
                         <td><input type="text" name="textuser" style="width: 10em;"></td>

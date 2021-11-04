@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+echo $_SESSION['textuser'];
+?>
 <!DOCTYPE html>
 <html>
 

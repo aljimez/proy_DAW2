@@ -25,7 +25,7 @@ window.location  = "../login.php";</script>';
 
     if ($result) {
 
-        header('Location: login.html');
+        header('Location: loginv.php');
 
     } else {
 ?>
