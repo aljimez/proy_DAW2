@@ -35,9 +35,8 @@
     margin: 50px;
 }
 
-.back > .inf_h {
-    width: 400px;
-    height: 200px;
+ .inf_h {
+  
     background-color: rgb(168, 164, 164);
- align-content: center;
+    padding: 100px 200px 100px 200px;
 }
