@@ -14,6 +14,7 @@ if($_POST["unsess"] == true){
 <?php
 session_abort();
 session_destroy();
+header('index.php')
 ?>
 }
 
