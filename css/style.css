@@ -1,5 +1,7 @@
 .back {
     background-color: orange;
+    display: flex;
+    
 }
 
 .imglo {
@@ -31,4 +33,11 @@
 
 .bot {
     margin: 50px;
+}
+
+.back > .inf_h {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(168, 164, 164);
+ align-content: center;
 }
