@@ -15,10 +15,9 @@ session_start();
 
     <script src="js/jquery.js"></script>
 
-    
+
     <!-- CSS only -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
 </head>
 
@@ -26,12 +25,13 @@ session_start();
     <div class="imglo">
         <a href="index.php"> <img src="img/rodlogo.png" alt="rodalieslogo" style="width: 15em;"></a>
     </div>
- 
+
     <div class="cont">
 
         <div class="opci">
-           <a class="bot" href="loginv.php"><button>Inicia sessió</button></a>
+            <a class="bot" href="loginv.php"><button>Inicia sessió</button></a>
             <a class="bot" href="#"><button> Que oferim?</button></a>
-           <a class="bot" href="#"> <button>Horaris</button></a>
+            <a class="bot" href="#"> <button>Horaris</button></a>
             <a class="bot" href="#"><button>Estat dels serveis</button></a>
         </div>
+    </div>

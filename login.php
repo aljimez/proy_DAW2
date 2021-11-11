@@ -21,6 +21,7 @@ $_SESSION['textuser'] = $user;
 
 header('Location: mpag.php');
 }else header('Location: loginv.php');
+
 /*
 $query = mysqli_query ($conn,"insert into login values ($pass_encrypt,$nombre)")
 $nr = mysqli_num_rows($query);

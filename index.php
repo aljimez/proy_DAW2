@@ -1,9 +1,8 @@
 <?php
 include("menu.php");
 ?>
-</div>
 <div class="inf_h">
-    <form action="" method="POST">
+    <form action="index.php" method="POST">
         <h3>Horaris de trens</h3>
         <label for="orig">Estació d'origen</label>
         <input type="text" id="orig" name="st_ori"><br><br>
