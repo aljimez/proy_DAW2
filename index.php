@@ -1,6 +1,7 @@
 <?php
 include("menu.php");
 ?>
+<!--Formulario consulta horarios-->
 <div class="inf_h">
     <form action="index.php" method="POST">
         <h3>Horaris de trens</h3>

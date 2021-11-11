@@ -1,13 +1,10 @@
 <?php
-
-
 include("menu.php");
-
 ?>
+<!--Página sesión iniciada-->
 <form method="post" action="mpag.php">
 <button name="unsess">Logout</button>
 </form>
-</div>
 <hr>
 <script>
 if($_POST["unsess"] == true){
