@@ -2,6 +2,7 @@
 include('menu.php');
 ?>
        <hr>
+       <div class="cont">
         <div class="login">
             <!--Formulario de login-->
             <form method="post" action="login.php">
@@ -26,8 +27,6 @@ include('menu.php');
                     </tr>
                 </table>
             </form>
-        </div>
-        <button class="shreg" onclick="ShowHideElement()">No estás registrat?</button>
 
         <br>
         <!--Formulario de registro-->
@@ -68,8 +67,12 @@ include('menu.php');
             </form>
         </div>
         <button class="shlog" onclick="ShowHideElementreg()">Ja estás registrat?</button>
+        </div>
+        <button class="shreg" onclick="ShowHideElement()">No estás registrat?</button>
 
     </div>
+
+</div>
     <!--JQuery mostrar/ocultar formulario-->
 
     <script type="text/javascript">

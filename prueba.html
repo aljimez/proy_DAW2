@@ -1,9 +1,3 @@
-<?php
-
-session_start();
-
-?>
-
 <!DOCTYPE html>
 <html>
 <!--vscode://vscode.github-authentication/did-authenticate?windowid=1&code=fec1d0c709c188e3539a&state=2890e6ea-c45d-4d07-a45a-21c11decf49f-->
@@ -22,11 +16,9 @@ session_start();
 </head>
 <!--HTML del menú-->
 <body class="back">
-    <div class="navegacion">
     <div class="imglo">
         <a href="index.php"> <img src="img/rodlogo.png" alt="rodalieslogo" style="width: 15em;"></a>
     </div>
-
 
         <div class="opci">
             <a class="bot" href="loginv.php"><button>Inicia sessió</button></a>
@@ -34,4 +26,21 @@ session_start();
             <a class="bot" href="#"> <button>Horaris</button></a>
             <a class="bot" href="#"><button>Estat dels serveis</button></a>
         </div>
+    <!--Formulario consulta horarios-->
+ <div class="cont">
+    <div class="inf_h">
+        <form action="index.php" method="POST">
+            <h3>Horaris de trens</h3>
+            <label for="orig">Estació d'origen</label>
+            <input type="text" id="orig" name="st_ori"><br><br>
+            <label for="dest">Estació destí</label>
+            <input type="text" id="dest" name="st_dst">
+        </form>
     </div>
+ </div>
+    
+    
+    
+</body>
+    
+    </html>

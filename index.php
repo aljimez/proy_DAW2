@@ -2,6 +2,7 @@
 include("menu.php");
 ?>
 <!--Formulario consulta horarios-->
+<div class="cont">
 <div class="inf_h">
     <form action="index.php" method="POST">
         <h3>Horaris de trens</h3>
@@ -10,7 +11,11 @@ include("menu.php");
         <label for="dest">Estació destí</label>
         <input type="text" id="dest" name="st_dst">
     </form>
+    </div>
 </div>
+
+
+
 </body>
 
 </html>
