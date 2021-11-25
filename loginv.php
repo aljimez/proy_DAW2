@@ -4,10 +4,10 @@ include('menu.php');
        <div class="cont">
         <div class="login" style="background-color: orange;">
             <!--Formulario de login-->
-            <form method="post" action="login.php">
+            <form method="post" action="login.php" action="mpag.php">
                 <table>
                     <tr>
-                        <td colspan="2"><strong><label> Login</label></strong></td>
+                        <td colspan="2"><strong><label> Inicia Sessió</label></strong></td>
                     </tr>
                     <tr>
                         <td><label> Usuari</label></td>

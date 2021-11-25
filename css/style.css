@@ -1,8 +1,9 @@
 .back {
     background-color: orange;
-   
+
 }
-.cont{
+
+.cont {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -15,12 +16,13 @@
     margin-right: 50px;
 }
 
-.navegacion{
+.navegacion {
 
     display: block;
 }
-.opci{
-display: flex;
+
+.opci {
+    display: flex;
 }
 
 .imglo {
@@ -29,16 +31,25 @@ display: flex;
 
 .login {
     width: 15em;
-align-content: center;
-justify-content: center;
-display: flex;
-border-radius: 10%;
-
-}
-.register{
-
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10%;
+    background-size: cover;
+    padding: 50px 100px 50px 100px;
+    align-content: center;
     border-radius: 10%;
 
+}
+
+.register {
+
+    width: 15em;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10%;
+    background-size: cover;
 }
 
 
@@ -59,9 +70,9 @@ border-radius: 10%;
     margin: 50px;
 }
 
- .inf_h {
+.inf_h {
     display: flex;
-    background-color:rgba(255, 166, 0, 0.719);
+    background-color: rgba(255, 166, 0, 0.719);
     padding: 50px 100px 50px 100px;
     align-content: center;
     border-radius: 10%;
