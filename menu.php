@@ -33,5 +33,10 @@ session_start();
             <a class="bot" href="#"><button> Que oferim?</button></a>
             <a class="bot" href="#"> <button>Horaris</button></a>
             <a class="bot" href="#"><button>Estat dels serveis</button></a>
+            <a class="bot" href="#"><button>Compra/Recárrega de billets</button></a>
+
         </div>
     </div>
+    <hr>
+<!--    <img src="img/trenrod.jpg" alt="trenrodalies" class="imgrod">-->
+

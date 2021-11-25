@@ -1,12 +1,16 @@
 .back {
     background-color: orange;
-    
+   
 }
 .cont{
     display: flex;
     justify-content: center;
     width: 100%;
+    background-image: url("../img/rodalies-renfe-cataluna-1568x882.webp");
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 .navegacion{
 
     display: block;

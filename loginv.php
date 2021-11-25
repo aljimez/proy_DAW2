@@ -1,9 +1,8 @@
 <?php
 include('menu.php');
 ?>
-       <hr>
        <div class="cont">
-        <div class="login">
+        <div class="login" style="background-color: orange;">
             <!--Formulario de login-->
             <form method="post" action="login.php">
                 <table>
