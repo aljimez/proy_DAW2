@@ -6,9 +6,13 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background-image: url("../img/rodalies-renfe-cataluna-1568x882.webp");
+    background-image: url("../img/tren-rodalies-generalitat-catalunya_thumb_620.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .navegacion{
@@ -24,13 +28,18 @@ display: flex;
 }
 
 .login {
-    border: black 2px solid;
     width: 15em;
 align-content: center;
 justify-content: center;
 display: flex;
-}
+border-radius: 10%;
 
+}
+.register{
+
+    border-radius: 10%;
+
+}
 
 
 .menu {
@@ -52,7 +61,8 @@ display: flex;
 
  .inf_h {
     display: flex;
-    background-color: rgb(168, 164, 164);
-    padding: 100px 200px 100px 200px;
+    background-color:rgba(255, 166, 0, 0.719);
+    padding: 50px 100px 50px 100px;
     align-content: center;
+    border-radius: 10%;
 }

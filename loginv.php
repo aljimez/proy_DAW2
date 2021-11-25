@@ -7,7 +7,7 @@ include('menu.php');
             <form method="post" action="login.php">
                 <table>
                     <tr>
-                        <td colspan="2"><label> Login</label></td>
+                        <td colspan="2"><strong><label> Login</label></strong></td>
                     </tr>
                     <tr>
                         <td><label> Usuari</label></td>
