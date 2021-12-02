@@ -4,7 +4,7 @@ include("menu.php");
 <!--Formulario consulta horarios-->
 <div class="cont">
 <div class="inf_h">
-    <form action="index.php" method="POST">
+    <form action="horar.php" method="POST">
         <h3>On vols anar?</h3>
         <label for="orig">Estació d'origen</label>
         <input type="text" id="orig" name="st_ori"><br><br>
@@ -16,9 +16,5 @@ include("menu.php");
     </form>
     </div>
 </div>
-
-
-
 </body>
-
 </html>

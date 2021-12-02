@@ -25,6 +25,18 @@
     display: flex;
 }
 
+.opci button {
+
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 1, 75em;
+
+}
+
 .imglo {
     width: 15em;
 }
@@ -50,6 +62,7 @@
     display: flex;
     border-radius: 10%;
     background-size: cover;
+    
 }
 
 
