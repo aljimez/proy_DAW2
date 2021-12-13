@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 url = 'http://rodalies.gencat.cat/es/alteracions_del_servei/'
 html = urllib.request.urlopen(url)
 soup2 = BeautifulSoup (html)
-tags = [];
+tags = []
 
 tag=soup2.find_all(class_="destacat_icones list-group-item")
 

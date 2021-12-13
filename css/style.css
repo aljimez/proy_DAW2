@@ -1,6 +1,7 @@
+
 .back {
     background-color: orange;
-
+    box-sizing: border-box;
 }
 
 .cont {
@@ -61,7 +62,7 @@
     justify-content: center;
     display: flex;
     border-radius: 10%;
-    background-size: cover;
+  /*  background-size: cover;*/
     
 }
 
