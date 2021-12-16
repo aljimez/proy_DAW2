@@ -12,14 +12,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding: 50px 10px;
+    align-items: center;
+    flex-direction: column;
 }
+
 
 .navegacion {
 
     display: block;
+    
 }
 
 .opci {
@@ -47,23 +49,24 @@
     align-content: center;
     justify-content: center;
     display: flex;
-    border-radius: 10%;
     background-size: cover;
     padding: 50px 100px 50px 100px;
     align-content: center;
     border-radius: 10%;
+    background-color:  rgba(255, 166, 0, 0.719);
 
 }
 
 .register {
-
+    background-color: rgba(255, 166, 0, 0.719);
     width: 15em;
     align-content: center;
     justify-content: center;
     display: flex;
     border-radius: 10%;
-  /*  background-size: cover;*/
-    
+    background-size: cover;
+    padding: 50px 100px 50px 100px;
+
 }
 
 
@@ -72,13 +75,6 @@
     align-content: center;
 }
 
-.cont {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 .bot {
     margin: 50px;
@@ -90,4 +86,17 @@
     padding: 50px 100px 50px 100px;
     align-content: center;
     border-radius: 10%;
+}
+.destacat_icones{
+background-color: none;
+}
+.list-group-item {
+    background-color: orange !important;
+    text-decoration: none !important;
+    list-style: none !important;
+
+}
+.list-group-item p{
+
+    font-size: 15px !important;
 }
