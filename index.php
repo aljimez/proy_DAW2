@@ -2,6 +2,7 @@
 include("menu.php");
 ?>
 <!--Formulario consulta horarios-->
+<!--API de estaciones de rodalies cataluña https://data.renfe.com/dataset/estaciones-rodalies-barcelona/resource/dd090aa2-7b8d-45ab-97c2-bf70653bc117-->
 <div class="cont">
 <div class="inf_h">
     <form action="horar.php" method="POST">

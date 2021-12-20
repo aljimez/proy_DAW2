@@ -1,0 +1,2 @@
+1. Importar la API de las estaciones de rodalies https://data.renfe.com/dataset/estaciones-rodalies-barcelona/resource/dd090aa2-7b8d-45ab-97c2-bf70653bc117
+2. 
