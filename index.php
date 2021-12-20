@@ -9,6 +9,9 @@ include("menu.php");
         <h3>On vols anar?</h3>
         <label for="orig">Estació d'origen</label>
         <input type="text" id="orig" name="st_ori"><br><br>
+        <!--https://data.renfe.com/api/3/action/datastore_search_sql?sql=SELECT DESCRIPCION from "dd090aa2-7b8d-45ab-97c2-bf70653bc117" -->
+
+
         <label for="dest">Estació destí</label>
         <input type="text" id="dest" name="st_dst"><br><br>
         <label for="mome">Quan?</label><input type="date" id="mome">
