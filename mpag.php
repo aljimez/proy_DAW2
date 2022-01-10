@@ -43,19 +43,16 @@ include("con_db.php");
             ?>
         }
     }
+    </script>
+    <?php
     if ($_POST['st_orifa'] && $_POST['st_dstfa']) {
 
+        $query = mysqli_query($conn, 'insert into userlogs (id,favorigin,favdesti) values '('.$_POST["st_orifa"].','.$_POST["st_dstfa"].'));
 
-        $query = mysqli_query($conn, 'insert into userlogs (id,favorigin,favdesti) values ('.$_POST["st_orifa"].','.$_POST["st_dstfa"].');
+    }
 
 
-        }
-</script>
 
-<?php
-
-$query = "select favorigin from userlog ";
-$result = mysqli_query($conn, $query);
 echo $result;
 
 ?>
