@@ -1,18 +1,30 @@
 <?php
-include("menu.php");
+include("menuinic.php");
+include("con_db.php");
 ?>
 <!--Página sesión iniciada-->
 <form method="post" action="mpag.php">
-    <button name="unsess">Logout</button>
-    <button type="submit" name="delcont">Esborrar les meves dades</button>
+    <div class="prefform">
+        <div class="mnbottom">
+            <button type="submit" name="unsess">Logout</button>
+            <button type="submit" name="delcont">Esborrar les meves dades</button><br>
+        </div>
+        <div class="estpref">
+            <label for="orig">Estació d'origen favorita</label>
+            <input type="text" id="orig" name="st_orifa"><br><br>
+            <label for="dest">Estació destí favorita</label>
+            <input type="text" id="dest" name="st_dstfa"><br><br>
+        </div>
+    </div>
 </form>
+
 <hr>
 <script>
     if ($_POST["unsess"] == true) {
         <?php
         session_abort();
         session_destroy();
-        header('index.php')
+        header('index.php');
         ?>
     }
     if ($_POST["delcont"]) {
@@ -31,7 +43,22 @@ include("menu.php");
             ?>
         }
     }
+    if ($_POST['st_orifa'] && $_POST['st_dstfa']) {
+
+
+        $query = mysqli_query($conn, 'insert into userlogs (id,favorigin,favdesti) values ('.$_POST["st_orifa"].','.$_POST["st_dstfa"].');
+
+
+        }
 </script>
+
+<?php
+
+$query = "select favorigin from userlog ";
+$result = mysqli_query($conn, $query);
+echo $result;
+
+?>
 </body>
 
 </html>
