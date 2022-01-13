@@ -1,0 +1,229 @@
+stop_id,stop_name
+65400,Tortosa
+65401,Camp-Redo
+65402,L'aldea-Amposta-Tortosa
+65403,Camarles-Deltebre
+65404,L'ampolla-El Perello-Deltebre
+65405,L'ametlla De Mar
+65407,L'hospitalet De L'infant
+65409,Cambrils
+65411,Salou - Port Aventura
+65420,L'hospitalet De L'infant
+65422,Cambrils
+71208,Faio-La Pobla De Massaluca (fayon)
+71209,Riba-Roja D'ebre
+71210,Flix
+71211,Ascó
+71300,Mora La Nova
+71301,Els Guiamets
+71302,Capçanes
+71303,Marça-Falset
+71304,Pradell De La Teixeta
+71305,Duesaigues-L'argentera
+71306,Riudecanyes-Botarell
+71307,Les Borges Del Camp
+71400,Reus
+71401,Vila-Seca
+71500,Tarragona
+71502,Altafulla-Tamarit
+71503,Torredembarra
+71600,Sant Vicenç De Calders
+71601,Calafell
+71602,Segur De Calafell
+71603,Cunit
+71604,Cubelles
+71700,Vilanova I La Geltru
+71701,Sitges
+71703,Garraf (apt)
+71704,Platja De Castelldefels
+71705,Castelldefels
+71706,Gava
+71707,El Prat De Llobregat
+71708,Bellvitge
+71709,Viladecans
+71801,Barcelona-Sants
+71802,Barcelona-Passeig De Gracia
+72100,Roda De Bara
+72101,Roda De Mar
+72201,El Vendrell
+72202,L'arboc
+72203,Els Monjos
+72204,Vilafranca Del Penedes
+72205,La Granada
+72206,Lavern-Subirats (apd)
+72207,Sant Sadurni D'anoia
+72208,Gelida (apd)
+72209,Martorell
+72210,Castellbisbal
+72211,El Papiol (apd)
+72300,Molins De Rei
+72301,Sant Feliu De Llobregat
+72302,Sant Joan Despi (apd)
+72303,Cornella
+72305,L'hospitalet De Llobregat
+72400,El Prat Aeroport
+72501,Rubi
+72502,Sant Cugat
+72503,Cerdanyola Universiti
+73001,Puigverd De Lleida-Artesa De Lleida
+73002,Juneda
+73003,Les Borges Blanques
+73004,La Floresta
+73005,Vinaixa
+73006,Vimbodi I Poblet
+73007,L'espluga De Francoli
+73008,Montblanc
+73009,Vilaverd
+73010,La Riba
+73100,La Plana-Picamoixons
+73101,Alcover
+73102,La Selva Del Camp
+75101,Alcoletge
+75102,Vilanova De La Barca
+75103,Termens
+75104,Vallfogona De Balaguer
+75105,Balaguer
+75106,Gerb
+75107,Sant Llorenç De Montgai
+75108,Vilanova De La Sal
+75109,Santa LiÑa
+75110,Ager
+75111,Cellers-Llimiana
+75112,Guardia De Tremp
+75113,Palau-Puigcercos
+75114,Tremp
+75115,Salas De Pallars
+75116,La Pobla De Segur
+76001,Salomo
+76002,Vilabella
+76003,Nulles-Brafim
+76004,Valls
+77002,Montcada-Ripollet
+77003,Santa Perpetua De Mogoda
+77004,Mollet-Santa Rosa
+77005,Parets Del Valles
+77006,Granollers-Canovelles
+77100,Les Franqueses Del Valles
+77102,La Garriga
+77103,Figaró
+77104,Sant  Marti De Centelles
+77105,Centelles
+77106,Els Hostalets De Balenya
+77107,Balenya
+77109,Vic
+77110,Manlleu
+77111,Torello
+77112,Borgonya (apd)
+77113,Sant Quirze De Besora-Montesquiu
+77114,La Farga De Bebie
+77200,Ripoll
+77301,Campdevanol
+77303,Ribes De Freser
+77304,Planoles (apt)
+77305,Toses (apt)
+77306,La Molina
+77307,Urtx-Alp (apt)
+77309,Puigcerda
+77310,La Tour De Carol
+78005,Villanueva De Gallego
+78100,Zuera
+78200,Tardienta
+78201,GraÑen
+78202,Marcen-PoleÑino
+78203,SariÑena
+78300,Selgua
+78301,Monzon-Rio Cinca
+78302,Binefar
+78400,Lleida
+78402,Bell-Lloc D'urgell
+78403,Mollerussa
+78404,Golmes
+78405,Castellnou De Seana
+78406,Bellpuig
+78407,Anglesola
+78408,Tarrega
+78500,Cervera
+78501,Sant Guim De Freixenet
+78502,Sant Marti Sesgueioles
+78503,Calaf
+78504,Seguers-Sant Pere Sallavinera
+78505,Aguilar De Segarra
+78506,Rajadell
+78600,Manresa
+78604,Sant Vicenç De Castellet
+78605,Castellbell I El Vilar-Monistrol Monts
+78606,Vacarisses
+78607,Vacarisses-Torreblanca
+78609,Viladecavalls
+78610,Sant Miquel De Gonteres
+78700,Terrassa
+78703,Sabadell Sud
+78704,Sabadell Centre
+78705,Barbera Del Valles
+78706,Cerdanyola Del Valles
+78707,Montcada I Reixac-Santa Maria
+78708,Montcada I Reixac-Manresa
+78709,Sabadell Nord
+78710,Terrasa Est
+78800,Montcada Bifurcacio
+78801,Barcelona-Torre Del Baro
+78802,Sant Andreu Arenal
+78804,Barcelona-Arc De Triomf
+78805,Barcelona-Plaça De Catalunya
+78806,Barcelona La Sagrera Meridiana
+79004,Barcelona-Sant Andreu Comtal
+79005,Montcada I Reixac
+79006,Mollet-Sant Fost
+79007,Montmelo
+79009,Barcelona-Clot-Arago
+79011,Llagosta
+79100,Granollers Centre
+79101,Cardedeu
+79102,Llinars Del Valles
+79103,Palautordera (apd)
+79104,Sant Celoni
+79105,Gualba
+79106,Riells I Viabrea-Breda
+79107,Hostalric
+79109,Les Franqueses-Granollers Nord
+79200,Maçanet-Massanes
+79202,Sils
+79203,Caldes De Malavella
+79204,Riudellots
+79205,Fornells De La Selva
+79300,Girona
+79301,Celra
+79302,Bordils-Juia
+79303,Flaça
+79304,Sant Jordi Desvalls
+79305,Camallera
+79306,Sant Miquel De Fluvia
+79308,Vilamalla
+79309,Figueres
+79311,Vilajuiga
+79312,Llançà
+79314,Colera
+79315,Portbou
+79316,Cerbere
+79400,Barcelona-Estacio De França
+79403,Sant Adria De Besos (apd)
+79404,Badalona
+79405,Montgat
+79406,Montgat-Nord (p)
+79407,El Masnou
+79408,Ocata (apd)
+79409,Premia De Mar Apeadero
+79410,Vilassar De Mar
+79412,Cabrera Ma
+79500,Mataro
+79501,Sant Andreu De Llavaneres (apt)
+79502,Caldes D'estrac
+79600,Arenys De Mar
+79601,Canet De Mar
+79602,Sant Pol De Mar
+79603,Calella
+79604,Pineda De Mar
+79605,Malgrat Del Mar
+79606,Blanes
+79607,Tordera
+79608,Sta.susann
