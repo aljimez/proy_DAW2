@@ -1,25 +1,25 @@
-route_id,route_short_name,route_long_name
-50T0001R1  ,R1  ,Molins de Rei                           -Maçanet-Massanes                        
-50T0002R1  ,R1  ,Maçanet-Massanes                        -Molins de Rei                           
-50T0003R2N ,R2N ,Aeroport                                -Maçanet-Massanes                        
-50T0004R2N ,R2N ,Maçanet-Massanes                        -Aeroport                                
-50T0005R4  ,R4  ,Sant Vicenc de Calders                  -Manresa                                 
-50T0006R4  ,R4  ,Manresa                                 -Sant Vicenc de Calders                  
-50T0007R2S ,R2S ,Sant Vicenc de Calders                  -Barcelona-Estació de França             
-50T0008R2S ,R2S ,Barcelona-Estació de França             -Sant Vicenc de Calders                  
-50T0009R2S ,R2S ,Sant Vicenc de Calders                  -Barcelona-Estació de França             
-50T0010R2S ,R2S ,Barcelona-Estació de França             -Sant Vicenc de Calders                  
-50T0011R2S ,R2S ,Sant Vicenc de Calders                  -Barcelona-Estació de França             
-50T0012R2S ,R2S ,Barcelona-Estació de França             -Sant Vicenc de Calders                  
-50T0013R2  ,R2  ,Sant Vicenc de Calders                  -Maçanet-Massanes                        
-50T0014R2  ,R2  ,Maçanet-Massanes                        -Sant Vicenc de Calders                  
-50T0015R3  ,R3  ,L'Hospitalet de Llobregat               -Puigcerdà                               
-50T0016R3  ,R3  ,Puigcerdà                               -L'Hospitalet de Llobregat               
-50T0017R3a ,R3a ,Vic                                     -La Tor de Querol-Enveig                 
-50T0018R3a ,R3a ,La Tor de Querol-Enveig                 -Vic                                     
-50T0019R4  ,R4  ,Sant Vicenc de Calders                  -Manresa                                 
-50T0020R4  ,R4  ,Manresa                                 -Sant Vicenc de Calders                  
-50T0021R7  ,R7  ,Martorell                               -L'Hospitalet de Llobregat               
-50T0022R7  ,R7  ,L'Hospitalet de Llobregat               -Martorell                               
-50T0023R8  ,R8  ,Martorell                               -Granollers Centre                       
-50T0024R8  ,R8  ,Granollers Centre                       -Martorell                               
+id,route_id,route_short_name,route_long_name
+,50T0001R1  ,R1  ,Molins de Rei                           -Maçanet-Massanes                        
+,50T0002R1  ,R1  ,Maçanet-Massanes                        -Molins de Rei                           
+,50T0003R2N ,R2N ,Aeroport                                -Maçanet-Massanes                        
+,50T0004R2N ,R2N ,Maçanet-Massanes                        -Aeroport                                
+,50T0005R4  ,R4  ,Sant Vicenc de Calders                  -Manresa                                 
+,50T0006R4  ,R4  ,Manresa                                 -Sant Vicenc de Calders                  
+,50T0007R2S ,R2S ,Sant Vicenc de Calders                  -Barcelona-Estació de França             
+,50T0008R2S ,R2S ,Barcelona-Estació de França             -Sant Vicenc de Calders                  
+,50T0009R2S ,R2S ,Sant Vicenc de Calders                  -Barcelona-Estació de França             
+,50T0010R2S ,R2S ,Barcelona-Estació de França             -Sant Vicenc de Calders                  
+,50T0011R2S ,R2S ,Sant Vicenc de Calders                  -Barcelona-Estació de França             
+,50T0012R2S ,R2S ,Barcelona-Estació de França             -Sant Vicenc de Calders                  
+,50T0013R2  ,R2  ,Sant Vicenc de Calders                  -Maçanet-Massanes                        
+,50T0014R2  ,R2  ,Maçanet-Massanes                        -Sant Vicenc de Calders                  
+,50T0015R3  ,R3  ,L'Hospitalet de Llobregat               -Puigcerdà                               
+,50T0016R3  ,R3  ,Puigcerdà                               -L'Hospitalet de Llobregat               
+,50T0017R3a ,R3a ,Vic                                     -La Tor de Querol-Enveig                 
+,50T0018R3a ,R3a ,La Tor de Querol-Enveig                 -Vic                                     
+,50T0019R4  ,R4  ,Sant Vicenc de Calders                  -Manresa                                 
+,50T0020R4  ,R4  ,Manresa                                 -Sant Vicenc de Calders                  
+,50T0021R7  ,R7  ,Martorell                               -L'Hospitalet de Llobregat               
+,50T0022R7  ,R7  ,L'Hospitalet de Llobregat               -Martorell                               
+,50T0023R8  ,R8  ,Martorell                               -Granollers Centre                       
+,50T0024R8  ,R8  ,Granollers Centre                       -Martorell                               
