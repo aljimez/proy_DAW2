@@ -1,3 +1,5 @@
-1. Importar csv de las rutas a base de datos
-2. Obtener datos de bd mostrar en formulario (array asociativo).
-3. Multiidioma (ya veremos).
+1. Cribar datos solo de cataluña en base a routes.csv (vlookup)
+2. Importar csv de las rutas a base de datos 
+3. Hacer relaciónes (Diseñador phpmyadmin)
+4. Obtener datos de bd mostrar en formulario (array asociativo).
+5. Multiidioma (ya veremos).
