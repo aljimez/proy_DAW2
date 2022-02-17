@@ -4,7 +4,7 @@ include('menu.php');
 <div class="cont">
     <div class="login">
         <!--Formulario de login-->
-        <form method="post" action="login.php" action="mpag.php">
+        <form method="post" action="login.php">
             <table>
                 <tr>
                     <td colspan="2"><strong><label> Inicia Sessió</label></strong></td>

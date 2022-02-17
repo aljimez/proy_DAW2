@@ -1,2 +1,2 @@
-1. Obtener datos de bd mostrar en formulario (array asociativo).
+
 2. Multiidioma (ya veremos).

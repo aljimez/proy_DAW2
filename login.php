@@ -1,6 +1,6 @@
 <?php
-require ("con_db.php");
-session_start();
+require "con_db.php";
+//session_start();
 if (!$conn){
 
 die ("No hay conexión: ".mysqli_connect_error());
@@ -11,10 +11,13 @@ $user = $_POST ["textuser"];
 $pass = $_POST ["textpassword"];
 $pass_encrypt = hash('sha512',$pass);
 
-$query1 = mysqli_query($conn,"SELECT * FROM login WHERE user = '".$user."'");
+//$query1 = mysqli_query($conn,"SELECT * FROM login WHERE user = '".$user."'");
+$DataConn = new DataConn();
+          $query1 = $DataConn->userselectquery($user);
 foreach ($query1 as $num_row => $value) {
 
     $passout = ($value['password']);
+    
 }
 if($pass_encrypt == $passout){
 $_SESSION['textuser'] = $user;

@@ -15,14 +15,13 @@ include("con_db.php");
             <label for="dest">Estació destí favorita</label>
             <input type="text" id="dest" name="st_dstfa"><br><br>
             <button type="submit">Enviar</button>
-
         </div>
     </div>
 </form>
 
 <hr>
 <script>
-    if ($_POST["unsess"] == true) {
+    if ($_POST["unsess"]) {
         <?php
         session_abort();
         session_destroy();
