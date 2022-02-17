@@ -32,8 +32,14 @@ return $result;
         
     }
     function selectestaciones($st_org, $dest,$mome){
-
-
+        $conn = mysqli_connect("localhost", "root", "","userdata");
+        mysqli_set_charset($conn,"utf8");
+        //$sql = "SELECT * from stops here stop_name =".$st_org.""
+        $sql = "select * from calendar inner join trips on calendar.service_id = trips.service_id where start_date = ".$mome;
+        $query1 = mysqli_query($conn,$sql);
+        
+        return $query1;
+        
     }
     
 };

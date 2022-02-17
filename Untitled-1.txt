@@ -1,0 +1,5 @@
+//calendar: horas de dia introducido
+rutas: short_name (R1,R2...)
+stop_times: arrival_time, departure_time, stop_sequences
+stops: stop_name
+Consulta paradas determinar origen destino (id de parada a stop_times trip_id a trips routes_id a routes)
