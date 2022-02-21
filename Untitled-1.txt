@@ -3,3 +3,6 @@ rutas: short_name (R1,R2...)
 stop_times: arrival_time, departure_time, stop_sequences
 stops: stop_name
 Consulta paradas determinar origen destino (id de parada a stop_times trip_id a trips routes_id a routes)
+
+Consulta correcta:
+select stop_name,arrival_time, departure_time, stop_sequence,route_short_name from stops INNER JOIN stop_times ON stops.stop_id = stop_times.stop_id INNER JOIN trips on stop_times.trip_id = trips.trip_id INNER JOIN routes on trips.route_id = routes.route_id
