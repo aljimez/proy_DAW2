@@ -35,7 +35,8 @@ return $result;
         $conn = mysqli_connect("localhost", "root", "","userdata");
         mysqli_set_charset($conn,"utf8");
         //$sql = "SELECT * from stops here stop_name =".$st_org.""
-        $sql = "select * from calendar inner join trips on calendar.service_id = trips.service_id where start_date = ".$mome;
+        $sql = "select".$st_org.",arrival_time, departure_time, stop_sequence,route_short_name from stops INNER JOIN stop_times ON stops.stop_id = stop_times.stop_id INNER JOIN trips on stop_times.trip_id = trips.trip_id INNER JOIN routes on trips.route_id = routes.route_id"
+        ;
         $query1 = mysqli_query($conn,$sql);
         
         return $query1;
