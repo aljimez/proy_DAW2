@@ -16,7 +16,7 @@ $DataConn = new DataConn();
           $query1 = $DataConn->userselectquery($user);
 foreach ($query1 as $num_row => $value) {
 
-    $passout = ($value['password']);
+    $passout = ($value['password']);   
     
 }
 if($pass_encrypt == $passout){

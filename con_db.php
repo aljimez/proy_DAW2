@@ -25,7 +25,7 @@ return $result;
     function userselectquery($user){
         $conn = mysqli_connect("localhost", "root", "","userdata");
         mysqli_set_charset($conn,"utf8");
-            $sql = "select * from ".$user;
+            $sql = "select * from 'login' where user = ".$user;
         $query1 = mysqli_query($conn,$sql);
         
         return $query1;

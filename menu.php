@@ -32,8 +32,6 @@ session_start();
             <a class="bot" href="loginv.php"><button>Inicia sessió</button></a>
             <a class="bot" href="offer.php"><button> Que oferim?</button></a>
             <a class="bot" href="servstat.php"><button>Estat dels serveis</button></a>
-            <a class="bot" href="#"><button>Compra/Recárrega de billets</button></a>
-
         </div>
     </div>
     <hr>

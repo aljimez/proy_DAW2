@@ -12,5 +12,9 @@ saber el nombre y la ruta de las paradas:
 select stop_name, route_short_name from stops inner join stop_times on stops.stop_id = stop_times.stop_id INNER JOIN trips on stop_times.trip_id = trips.trip_id INNER JOIN routes on trips.route_id = routes.route_id
 
 necesito una consulta que, sabiendo la parada y el nombre de la ruta podamos obtener los horarios, las secuencias y las paradas de toda la ruta
+
+
+
 Mora La Nova
 Reus
+
