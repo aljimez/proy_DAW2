@@ -6,15 +6,18 @@ Consulta paradas determinar origen destino (id de parada a stop_times trip_id a 
 
 Consulta correcta:
 select stop_name,arrival_time, departure_time, stop_sequence,route_short_name from stops INNER JOIN stop_times ON stops.stop_id = stop_times.stop_id INNER JOIN trips on stop_times.trip_id = trips.trip_id INNER JOIN routes on trips.route_id = routes.route_id
-select stop_name,arrival_time, departure_time, stop_sequence,route_short_name from stops INNER JOIN stop_times ON stops.stop_id = stop_times.stop_id INNER JOIN trips on stop_times.trip_id = trips.trip_id INNER JOIN routes on trips.route_id = routes.route_id WHERE stop_name = 'Reus' and route_short_name in (select route_short_name from routes)
-
+select stop_name,arrival_time, departure_time, stop_sequence,route_short_name from stops INNER JOIN stop_times ON stops.stop_id = stop_times.stop_id INNER JOIN trips on stop_times.trip_id = trips.trip_id INNER JOIN routes on trips.route_id = routes.route_id WHERE stop_name = 'Reus' or stop_name = 'Tarragona'
 saber el nombre y la ruta de las paradas:
 select stop_name, route_short_name from stops inner join stop_times on stops.stop_id = stop_times.stop_id INNER JOIN trips on stop_times.trip_id = trips.trip_id INNER JOIN routes on trips.route_id = routes.route_id
 
 necesito una consulta que, sabiendo la parada y el nombre de la ruta podamos obtener los horarios, las secuencias y las paradas de toda la ruta
 
-
+select service_id from calendar inner join trips on calendar.service_id = trips.service_id inner join  inner join stop_times on trips.trip_id = stop_times.trip_id inner join stops on stop_times.stop_id = stops.stop_id where stop_name
 
 Mora La Nova
 Reus
+
+
+select stop_name, arrival_time, departure_time, stop_sequence, route_short_name from stops INNER JOIN stop_times ON stops.stop_id = stop_times.stop_id INNER JOIN trips on stop_times.trip_id = trips.trip_id INNER JOIN routes on trips.route_id = routes.route_id WHERE stop_name = 'Reus' or stop_name = 'Tarragona' and route_short_name = (select route_short_name from routes inner join routes.routes_id = trips.routes_id inner join trips on trips.trip_id = stop_times.trip_id inner join stop_times on stop_times.stop_id = stops.stop_id where stop_name = "Tarragona")
+select stop_name, arrival_time, departure_time, stop_sequence, route_short_name from stops INNER JOIN stop_times ON stops.stop_id = stop_times.stop_id INNER JOIN trips on stop_times.trip_id = trips.trip_id INNER JOIN routes on trips.route_id = routes.route_id WHERE stop_name = 'Reus' or stop_name = 'Tarragona' and route_short_name = (select route_short_name from routes inner join routes.routes_id = trips.routes_id inner join trips on trips.trip_id = stop_times.trip_id inner join stop_times on stop_times.stop_id = stops.stop_id where stop_name = "Tarragona")
 

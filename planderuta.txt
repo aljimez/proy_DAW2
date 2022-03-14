@@ -1,2 +1,2 @@
-
-2. Multiidioma (ya veremos).
+1. Hacer consulta de horarios a base de datos
+2. Arreglar lo del login
