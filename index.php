@@ -11,34 +11,21 @@ include("menu.php");
   <div class="cont">
     <div class="inf_h">
       <form action="horar.php" method="POST">
-        <h3>On vols anar?</h3>
-        <label for="st_org">Estació d'origen</label>
-        <select name="st_org" id="st_org">
-          <?php
-          $DataConn = new DataConn();
-          $query1 = $DataConn->selectquery('stop_name', 'stops');
-          print_r($query1);
-          while ($valores = mysqli_fetch_array($query1)) {
-                 echo "<option value='".$valores['stop_name']."'>".$valores['stop_name']."</option>";  
-          }
-          ?>
-        </select><br>
-        <!--  <input type="text" id="orig" name="st_ori"><br><br>-->
-        <label for="dest">Estació destí</label>
-        <select name="dest" id="dest">
-        <?php
-          $DataConn = new DataConn();
-          $query1 = $DataConn->selectquery('stop_name', 'stops');
-          while ($valores = mysqli_fetch_array($query1)) {
-                 echo "<option value='".$valores['stop_name']."'>".$valores['stop_name']."</option>";  
-          }
-          ?>
-        </select><br>
-        <label for="mome">Quan?</label>
-        <input type="date" name="mome">
-       <!-- <label for="mome" name="mome">Quan?</label><input type="text" id="mome">-->
-        <br><br><br>
-        <input type="Submit" value="Consultar">
+      <label for="email">Correu electronic</label>
+      <input type="text" name="email">
+      <label for="">Nom</label>
+      <input type="text">
+      <label for="">Tipus de reclamació</label>
+      <select name="" id="">
+<option value="">Justificante de retraso</option>
+<option value="">Consutas y reclamaciones</option>
+<option value="">Atención telefonica</option>
+<option value="">Solicitud de objetos perdidos</option>
+<option value="">Devolución Xpress</option>
+      </select><br>
+      <textarea type="text"rows="10" cols="150">
+        Escriu aqui la teva reclamació
+      </textarea>
       </form>
     </div>
   </div>
