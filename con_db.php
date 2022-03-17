@@ -21,13 +21,17 @@ function insertquery($name,$email,$user,$encrypt_passw){
     $result = mysqli_query($conn, $query);
 
 return $result;
-}
-    function userselectquery($user){
+}//hacer consulta con user y pass y devolver true si fila existex  y false si no existeix
+    function userselectquery($user,$pass_encrypt){
         $conn = mysqli_connect("localhost", "root", "","userdata");
         mysqli_set_charset($conn,"utf8");
-            $sql = "SELECT * FROM login WHERE user ="."'".$user."'";
+            $sql = "SELECT * FROM login WHERE user ="."'".$user."'"." and password = ".$pass_encrypt;
+                echo $sql;
         $query1 = mysqli_query($conn,$sql);
-        
+        $fila = mysqli_fetch_row($query1);
+        if($fila) echo "existeix";
+        else echo "No existeix";
+        print_r($fila); 
         return $query1;
         
     }
@@ -41,6 +45,14 @@ return $result;
         
         return $query1;
         
+    }
+   
+    function insertdatosqueja($email, $name, $recty, $miss){
+        $conn = mysqli_connect("localhost", "root", "","userdata");
+        mysqli_set_charset($conn,"utf8");
+        $sql = "INSERT into reclamacio(missatge, correo, name, recty) values ('.$miss.','.$email.','.$name.','.$recty.');";
+        $query2 = mysqli_query($conn,$sql);
+        return $query2;
     }
     
 };
