@@ -23,9 +23,9 @@ $DataConn->insertdatosqueja($email, $name, $recty, $miss);
     <div class="inf_h">
       <form action="index.php" method="POST">
         <label for="email">Correu electronic</label>
-        <input type="email" name="email">
+        <input type="email" name="email" required>
         <label for="name">Nom</label>
-        <input type="text" name="name">
+        <input type="text" name="name" required>
         <label for="recty">Tipus de reclamació</label>
         <select name="recty">
         <option value="Justificante de retraso">Justificante de retraso</option>
@@ -34,7 +34,7 @@ $DataConn->insertdatosqueja($email, $name, $recty, $miss);
         <option value="Solicitud de objetos perdidos">Solicitud de objetos perdidos</option>
         </select><br>
         <textarea type="text"rows="10" cols="150" name="comm" maxlength="2000">
-          Escriu aqui la teva reclamació
+          
         </textarea><br>
         <button type="submit">Enviar</button>
       </form>
@@ -42,8 +42,5 @@ $DataConn->insertdatosqueja($email, $name, $recty, $miss);
   </div>
   
 </body>
-
-
-
 
 </html>
