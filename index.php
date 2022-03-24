@@ -16,6 +16,7 @@ $miss = $_POST['comm'];
 $DataConn = new DataConn();
 $DataConn->insertdatosqueja($email, $name, $recty, $miss);
 }
+
 ?>
 <!--Formulario consulta horarios-->
 <!--API de estaciones de rodalies cataluña https://data.renfe.com/dataset/estaciones-rodalies-barcelona/resource/dd090aa2-7b8d-45ab-97c2-bf70653bc117-->
@@ -34,7 +35,7 @@ $DataConn->insertdatosqueja($email, $name, $recty, $miss);
         <option value="Solicitud de objetos perdidos">Solicitud de objetos perdidos</option>
         </select><br>
         <textarea type="text"rows="10" cols="150" name="comm" maxlength="2000">
-          
+
         </textarea><br>
         <button type="submit">Enviar</button>
       </form>
