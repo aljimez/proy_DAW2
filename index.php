@@ -6,42 +6,139 @@ include("menu.php");
 //curl https://data.renfe.com/api/3/action/datastore_search_sql?sql=SELECT DESCRIPCION from 'dd090aa2-7b8d-45ab-97c2-bf70653bc117'
 
 ?>
-<?php
 
-if(isset($_POST['email'])){
-$email = $_POST['email'];
-$name = $_POST['name'];
-$recty = $_POST['recty'];
-$miss = $_POST['comm'];
-$DataConn = new DataConn();
-$DataConn->insertdatosqueja($email, $name, $recty, $miss);
-}
-
-?>
-<!--Formulario consulta horarios-->
-<!--API de estaciones de rodalies cataluña https://data.renfe.com/dataset/estaciones-rodalies-barcelona/resource/dd090aa2-7b8d-45ab-97c2-bf70653bc117-->
-  <div class="cont">
-    <div class="inf_h">
-      <form action="index.php" method="POST">
-        <label for="email">Correu electronic</label>
-        <input type="email" name="email" required>
-        <label for="name">Nom</label>
-        <input type="text" name="name" required>
-        <label for="recty">Tipus de reclamació</label>
-        <select name="recty">
-        <option value="Justificante de retraso">Justificante de retraso</option>
-        <option value="Consutas y reclamaciones">Consutas y reclamaciones</option>
-        <option value="Atención telefonica">Atención telefonica</option>
-        <option value="Solicitud de objetos perdidos">Solicitud de objetos perdidos</option>
-        </select><br>
-        <textarea type="text"rows="10" cols="150" name="comm" maxlength="2000">
-
-        </textarea><br>
-        <button type="submit">Enviar</button>
-      </form>
+<div class="cont">
+    <div class="login">
+        <!--Formulario de login-->
+        <form method="post" action="login.php">
+            <table>
+                <tr>
+                    <td colspan="2"><strong><label> Inicia Sessió</label></strong></td>
+                </tr>
+                <tr>
+                    <td><label> Usuari</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="textuser" style="width: 10em;"></td>
+                </tr>
+                <tr>
+                    <td><label>Contrasenya</label></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="textpassword" style="width: 10em;"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Envia" name="Submit"></td>
+                </tr>
+            </table>
+        </form>
     </div>
-  </div>
-  
+    <br>
+    <!--Formulario de registro-->
+    <div class="register">
+        <form action="register.php" method="post">
+            <table>
+                <tr>
+                    <td colspan="2"><label><strong>Registre</strong></label></td>
+                </tr>
+                <tr>
+                    <td><label> Nom </label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="full_name" style="width: 10em;"></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                </tr>
+                <tr>
+                    <td><input type="email" name="email" style="width: 10em;"></td>
+                </tr>
+                <tr>
+                    <td><label>Usuari</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="user" style="width: 10em;"></td>
+                </tr>
+                <tr>
+                    <td><label>Contrasenya</label></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="textpassword" style="width: 10em;"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Registrar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <button class="shlog" onclick="ShowHideElementreg()">Ja estás registrat?</button>
+    <button class="shreg" onclick="ShowHideElement()">No estás registrat?</button>
+</div>
+<!--JQuery mostrar/ocultar formulario-->
+
+<script type="text/javascript">
+    $(".register").hide();
+
+    $(".shlog").hide();
+
+    function ShowHideElement() {
+
+        if ($(".register").hide()) {
+
+            $(".shlog").show();
+
+            $(".register").show();
+
+            $(".login").hide();
+
+            $(".shreg").hide();
+
+        } else {
+
+            $(".login").show();
+
+            $(".shreg").show();
+
+            $(".shlog").hide();
+
+            $(".register").hide();
+
+
+        }
+
+    }
+
+    function ShowHideElementreg() {
+        $(".register").show();
+
+        $(".shlog").show();
+
+        if ($(".register").hide()) {
+
+            $(".shlog").hide();
+
+            $(".register").hide();
+
+            $(".login").show();
+
+            $(".shreg").show();
+
+        } else {
+
+            $(".login").hide();
+
+            $(".shreg").hide();
+
+
+            $(".shlog").show();
+
+            $(".register").show();
+
+
+        }
+
+    }
+</script>
 </body>
 
 </html>

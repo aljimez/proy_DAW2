@@ -3,22 +3,11 @@ include("menuinic.php");
 include("con_db.php");
 ?>
 <!--Página sesión iniciada-->
-<form method="post" action="mpag.php">
-    <div class="prefform">
-        <div class="mnbottom">
-            <button type="submit" name="unsess">Logout</button>
-            <button type="submit" name="delcont">Esborrar les meves dades</button><br>
-        </div>
-        <div class="estpref">
-            <label for="orig">Estació d'origen favorita</label>
-            <input type="text" id="orig" name="st_orifa"><br><br>
-            <label for="dest">Estació destí favorita</label>
-            <input type="text" id="dest" name="st_dstfa"><br><br>
-            <button type="submit">Enviar</button>
-        </div>
-    </div>
-</form>
 
+<?php
+$DataConn = new DataConn();
+$DataConn->insertdatosqueja($email, $name, $recty, $miss);
+?>
 <hr>
 <script>
     if ($_POST["unsess"]) {
@@ -50,6 +39,7 @@ include("con_db.php");
         $query = mysqli_query($conn, 'insert into userlogs (id,favorigin,favdesti) values '('.$_POST["st_orifa"].','.$_POST["st_dstfa"].'));
 
     }
+    
 ?>
 </body>
 

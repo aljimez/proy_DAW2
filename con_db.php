@@ -63,5 +63,9 @@ return $result;
         return $query2;
 
     }
+    function muestrarec ($user){
+
+        
+    }
     
 };

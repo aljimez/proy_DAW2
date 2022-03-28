@@ -4,7 +4,6 @@
 include 'menu.php';
 
 ?>
-<p>A través d'aquesta páginaweb volem oferir al client la possibilitat de <br>
-fer la seva compra i/o recárrega de billets de rodalies d'una forma ecológica i desde casa</p>
+<p>A través d'aquesta páginaweb volem oferir al client la possibilitat de <br> publicar i administrar la seva reclamació sobre diferents incidéncies provocades a les diferents línies de tren de rodalies</p>
 </body>
 </html>

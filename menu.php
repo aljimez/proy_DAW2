@@ -29,7 +29,6 @@ session_start();
 
 
         <div class="opci">
-            <a class="bot" href="loginv.php"><button>Inicia sessió</button></a>
             <a class="bot" href="offer.php"><button> Que oferim?</button></a>
             <a class="bot" href="servstat.php"><button>Estat dels serveis</button></a>
         </div>
