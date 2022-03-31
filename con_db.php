@@ -47,10 +47,10 @@ return $result;
         
     }
    
-    function insertdatosqueja($email, $name, $recty, $miss){
+    function insertdatosqueja($usr_id,$email, $name, $recty, $miss){
         $conn = mysqli_connect("localhost", "root", "","userdata");
         mysqli_set_charset($conn,"utf8");
-        $sql = "INSERT into reclamacio(missatge, correo, name, rec_type) values ('.$miss.','.$email.','.$name.','.$recty.');";
+        $sql = "INSERT into reclamacio(usr_id,missatge, correo, name, rec_type) values ('.$usr_id.'.$miss.','.$email.','.$name.','.$recty.');";
         $query2 = mysqli_query($conn,$sql);
         return $query2;
     }

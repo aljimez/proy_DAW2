@@ -7,14 +7,17 @@ include("menuinic.php");
 
 ?>
 <?php
-
+session_start();
+$i = 0;
+session_id($i++);
 if(isset($_POST['email'])){
 $email = $_POST['email'];
 $name = $_POST['name'];
+$usr_id = $_SESSION['usr_id'];
 $recty = $_POST['recty'];
 $miss = $_POST['comm'];
 $DataConn = new DataConn();
-$DataConn->insertdatosqueja($email, $name, $recty, $miss);
+$DataConn->insertdatosqueja($usr_id, $email, $name, $recty, $miss);
 }
 
 ?>
@@ -30,12 +33,12 @@ $DataConn->insertdatosqueja($email, $name, $recty, $miss);
         <label for="recty">Tipus de reclamació</label>
         <select name="recty">
         <option value="Justificante de retraso">Justificante de retraso</option>
-        <option value="Consutas y reclamaciones">Consutas y reclamaciones</option>
+        <option value="Consultas y reclamaciones">Consutas y reclamaciones</option>
         <option value="Atención telefonica">Atención telefonica</option>
         <option value="Solicitud de objetos perdidos">Solicitud de objetos perdidos</option>
         </select><br>
-        <textarea type="text"rows="10" cols="150" name="comm" maxlength="2000">
-Introdueix aqui el text de la teva queixa
+        <textarea type="text"rows="10" cols="150" name="comm" maxlength="2000" required>
+        Introdueix aqui el text de la teva queixa
         </textarea><br>
         <button type="submit">Enviar</button>
       </form>

@@ -2,11 +2,11 @@
 include("menuinic.php");
 include("con_db.php");
 ?>
-<!--Página sesión iniciada-->
 
 <?php
+session_start();
 $DataConn = new DataConn();
-$DataConn->insertdatosqueja($email, $name, $recty, $miss);
+$DataConn->insertdatosqueja($usr_id, $email, $name, $recty, $miss);
 ?>
 <hr>
 <script>
