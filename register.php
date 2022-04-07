@@ -8,7 +8,20 @@ if (strlen($_POST['full_name']) > 1 && strlen($_POST['email']) > 1) {
     $verificar_correo = mysqli_query($conn, "SELECT * FROM login WHERE email='$email'");
     $passw = htmlentities(trim($_POST['textpassword']));
     $encrypt_passw =  htmlentities(trim(hash('sha512', $passw)));
+    $eemail=0;
+echo $name." ".$email." ".$user." ".$encrypt_passw;
+$DataConn = new DataConn();
+$query1 = $DataConn->insertquery($name,$email,$user,$encrypt_passw);
 
+if ($query1) {
+
+    header('Location: index.php');
+} else {
+    echo "<h3>Ha ocurrido un error</h3>";
+}
+
+}
+/*
     foreach ($verificar_correo as $num_row => $value) {
 
         $eemail = ($value['email']);
@@ -33,6 +46,7 @@ window.location  = "../proy_DAW2/loginv.php";</script>';
         <h3>Ha ocurrido un error</h3>
 
     <?php
+
     }
 } else {
 
@@ -43,3 +57,4 @@ window.location  = "../proy_DAW2/loginv.php";</script>';
 
 
 //Verificación de correo registrado (no se repita)
+*/

@@ -28,11 +28,8 @@ return $result;
             $sql = "SELECT * FROM login WHERE user ="."'".$user."'"." and password = ".$pass_encrypt;
                 echo $sql;
         $query1 = mysqli_query($conn,$sql);
-        $fila = mysqli_fetch_row($query1);
-        if($fila) echo "existeix";
-        else echo "No existeix";
-        print_r($fila); 
-        return $query1;
+        
+               return $query1;
         
     }
     function selectestaciones($st_org, $dest,$mome){
@@ -63,9 +60,12 @@ return $result;
         return $query2;
 
     }
-    function muestrarec ($user){
-
-        
+    function muestrarec ($usr_id,$email, $name, $recty, $miss){
+        $conn = mysqli_connect("localhost", "root", "","userdata");
+        mysqli_set_charset($conn,"utf8");
+        $sql = "select * from reclamacio where (select * from login where correo = ".$email.");";
+        $query2 = mysqli_query($conn,$sql);
+        return $query2;
     }
     
 };
