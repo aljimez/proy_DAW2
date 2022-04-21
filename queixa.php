@@ -4,12 +4,9 @@ include("menuinic.php");
 
 //Extraer descripcion, población y calle
 //curl https://data.renfe.com/api/3/action/datastore_search_sql?sql=SELECT DESCRIPCION from 'dd090aa2-7b8d-45ab-97c2-bf70653bc117'
-
+session_start();
 ?>
 <?php
-session_start();
-$i = 0;
-session_id($i++);
 if(isset($_POST['email'])){
 $email = $_POST['email'];
 $name = $_POST['name'];

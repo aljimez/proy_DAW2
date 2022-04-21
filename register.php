@@ -1,6 +1,6 @@
 <?php
 require "con_db.php";
-
+session_start();
 if (strlen($_POST['full_name']) > 1 && strlen($_POST['email']) > 1) {
     $name = htmlentities(trim($_POST['full_name']));
     $email = $_SESSION['email'] = htmlentities(trim($_POST['email']));
@@ -8,53 +8,17 @@ if (strlen($_POST['full_name']) > 1 && strlen($_POST['email']) > 1) {
     $verificar_correo = mysqli_query($conn, "SELECT * FROM login WHERE email='$email'");
     $passw = htmlentities(trim($_POST['textpassword']));
     $encrypt_passw =  htmlentities(trim(hash('sha512', $passw)));
-    $eemail=0;
+    $_SESSION['usr_id'] = $usr_id;
 echo $name." ".$email." ".$user." ".$encrypt_passw;
 $DataConn = new DataConn();
-$query1 = $DataConn->insertquery($name,$email,$user,$encrypt_passw);
+$query1 = $DataConn->insertquery($usr_id,$name,$email,$user,$encrypt_passw);
 
 if ($query1) {
-
     header('Location: index.php');
 } else {
     echo "<h3>Ha ocurrido un error</h3>";
 }
 
 }
-/*
-    foreach ($verificar_correo as $num_row => $value) {
-
-        $eemail = ($value['email']);
-    }
-    if ($email ==  $eemail) {
-
-        echo '<script>
-alert("Este correo ya está registrado, intenta con otro diferente");
-window.location  = "../proy_DAW2/loginv.php";</script>';
-    } else
-    
-       // $query = "INSERT INTO login(name,email,user,password) VALUES ('$name','$email','$user','$encrypt_passw')";
-    //$result = mysqli_query($conn, $query);
-    $DataConn = new DataConn();
-    $query1 = $DataConn->insertquery($name,$email,$user,$encrypt_passw);
-
-    if ($query1) {
-
-        header('Location: loginv.php');
-    } else {
 ?>
-        <h3>Ha ocurrido un error</h3>
 
-    <?php
-
-    }
-} else {
-
-    ?>
-    <h3>Porfavor completa los campos</h3>
-<?php
-}
-
-
-//Verificación de correo registrado (no se repita)
-*/
