@@ -20,8 +20,8 @@ function insertquery($usr_id,$name,$email,$user,$encrypt_passw){
 
     $result = mysqli_query($conn, $query);
 
-return $result;
-}//hacer consulta con user y pass y devolver true si fila existex  y false si no existeix
+    return $result;
+}
     function userselectquery($user,$pass_encrypt){
         $conn = mysqli_connect("localhost", "root", "","userdata");
         mysqli_set_charset($conn,"utf8");
@@ -32,8 +32,7 @@ return $result;
                return $query1;
         
     }
-
-
+    
     function insertdatosqueja($usr_id, $email, $name, $recty, $miss){
         $conn = mysqli_connect("localhost", "root", "","userdata");
         mysqli_set_charset($conn,"utf8");
