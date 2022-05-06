@@ -57,9 +57,8 @@ class DataConn{
         }
         mysqli_set_charset($conn,"utf8");
         $sql = "select * from reclamacio where exists (select * from login );";//where usr_id = '.$usr_id.'
-        echo $sql;
         $query2 = mysqli_query($conn,$sql);
-        //$query2 = mysqli_fetch_assoc($query2);
+        $query2 = mysqli_fetch_assoc($query2);
 
         return $query2;
     
