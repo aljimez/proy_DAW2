@@ -7,12 +7,14 @@ include("menuinic.php");
 $usr_id = $_SESSION['usr_id'];
 echo $usr_id;
 $DataConn = new DataConn();
-          $res = $DataConn->muestrarec($usr_id);
-            
+$query2 = $DataConn->muestrarec($usr_id);
+print_r($query2);
 
+while($res = $query2->fetch_array()){
 
-        
-           echo $res['rec_type'];
+         $res->missatge."<br>";
+
+}
 
 ?>
 <a href="logout.php">Cerrar sesión</a>

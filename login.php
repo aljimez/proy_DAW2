@@ -16,13 +16,18 @@ $pass_encrypt = hash('sha512',$pass);
 //Consulta BBDD para devolver pass y comparar
 $DataConn = new DataConn();
             $res = $DataConn->userselectquery($user,$pass_encrypt);
+        
             if($res==null) {
+
                 echo "usuari incorrecte";
                 exit;
+
             }
             else {
+
                 $_SESSION['usr_id'] = $res['usr_id'];
                 header('Location: reclam.php');
+
             }
             
 ?>
