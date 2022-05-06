@@ -31,9 +31,13 @@ session_start();
         <div class="opci">
             <a class="bot" href="offer.php"><button> Que oferim?</button></a>
             <a class="bot" href="servstat.php"><button>Estat dels serveis</button></a>
-            <a class="bot" href="queixa.php"><button>Emetre una reclamació</button></a>
-            <a class="bot" href="reclam.php"><button>Mostrar les reclamacións</button></a>
+            <?php 
 
+            if(isset($_SESSION['usr_id'])){
+            echo '<a class="bot" href="queixa.php"><button>Emetre una reclamació</button></a>';
+            echo '<a class="bot" href="reclam.php"><button>Mostrar les reclamacións</button></a>';
+            }
+?>
 
 
         </div>
